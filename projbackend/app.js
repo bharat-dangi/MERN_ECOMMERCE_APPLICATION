@@ -15,8 +15,10 @@ const paymentBRoutes = require("./routes/payment");
 const stripeRoutes = require("./routes/stripepayment");
 
 //DB Connection
+//LOCAL_DATABASE
+
 mongoose
-  .connect(process.env.DATABASE, {
+  .connect(process.env.LOCAL_DATABASE, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,

@@ -45,7 +45,7 @@ const Cart = () => {
     <Base title="Cart Page" description="Welcome to your cart">
       <div className="row text-center">
         <div className="col-6">
-          {products.length > 0 ? (
+          {products?.length > 0 ? (
             loadAllProducts(products)
           ) : (
             <h3>No product found</h3>

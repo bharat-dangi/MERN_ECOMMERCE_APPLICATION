@@ -23,7 +23,7 @@ const StripesCheckout = ({
 
   const getFinalPrice = () => {
     let amount = 0;
-    products.map((p) => {
+    products?.map((p) => {
       amount = amount + p.price;
     });
     return amount;
